@@ -1,0 +1,136 @@
+@import"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+p {
+    margin: 0
+}
+
+.content-title {
+    color: var(--textColor);
+    font-size: 32px;
+    margin-bottom: 30px
+}
+
+.input-main {
+    background: none;
+    border-radius: 8px;
+    border: 3px solid var(--textColor);
+    padding: 12px 20px;
+    font-size: 20px;
+    width: 300px;
+    color: var(--textColor);
+    transition: all .3s ease-in
+}
+
+.weather {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px -10px #000;
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+    height: 49px
+}
+
+.search-bar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 15px;
+    background: #ebfffc;
+    cursor: pointer
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0
+}
+
+.temp {
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0
+}
+
+.location {
+    font-size: 40px;
+    color: #fff;
+    margin: 0
+}
+
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    font-size: 22px;
+    gap: 12px
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px
+}
+
+@media (max-width: 450px) {
+    .weather {
+        padding: 40px 20px
+    }
+}
+
+@media (max-width: 390px) {
+    .weather {
+        padding: 40px 15px
+    }
+}
+
+:root {
+    --textColor: #1b4965;
+    --textSpecial: #bee9e8;
+    --backColor: #bee9e8
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--backColor);
+    background-image: url(./Background-rrPkomT5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100vh
+}
