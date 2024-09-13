@@ -1,0 +1,158 @@
+:root {
+    --textColor: #1b4965;
+    --textSpecial: #bee9e8;
+    --backColor: #bee9e8;
+}
+
+p {
+    margin: 0;
+}
+
+.content-title {
+    color: var(--textColor);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.input-main {
+    background: none;
+    border-radius: 8px;
+    border: 3px solid var(--textColor);
+    padding: 12px 20px;
+    font-size: 20px;
+    width: 300px;
+    color: var(--textColor);
+    transition: all 0.3s ease-in;
+}
+
+.weather {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 1);
+    border: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+    height: 49px;
+}
+
+.search-bar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 15px;
+    background: #ebfffc;
+    cursor: pointer;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0;
+}
+
+.temp {
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+    margin: 0;
+}
+
+.location {
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+}
+
+.weather-data {
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    font-size: 22px;
+    gap: 12px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 16px;
+
+}
+
+.weather-data .col img {
+    width: 26px;
+    margin-top: 10px;
+}
+
+
+
+@media(max-width: 450px) {
+    .weather {
+        padding: 40px 20px;
+    }
+}
+
+@media(max-width: 390px) {
+    .weather {
+        padding: 40px 15px;
+    }
+}
+
+
+/* .weather {
+    background-size: cover;
+    background-position: center;
+} */
+
+/* .clear-video {
+    background-image: url("./src/assets/clear.mp4");
+}
+
+.cloudy-video {
+    background-image: url("./src/assets/clouds.mp4");
+}
+
+.rainy-video {
+    background-image: url("./src/assets/rain.mp4");
+}
+
+.snowy-video {
+    background-image: url("./src/assets/snow.mp4");
+} */
+
+/* .weather {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */
